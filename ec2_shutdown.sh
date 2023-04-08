@@ -12,7 +12,7 @@ echo $DAY
 echo $HOUR
 
 # Stop the instance on Friday at 6 PM
-if [ $DAY -eq 6 ] && [ $HOUR -eq 19 ]; then
+if [ $DAY -eq 7 ] && [ $HOUR -eq 20 ]; then
     echo 'Stopping instance'
     aws ec2 stop-instances --region $REGION --instance-ids $INSTANCE_IDS
 fi
